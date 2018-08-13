@@ -20,10 +20,17 @@
     border: none !important
     &:hover
       background-color: transparent !important
+      background-color: #efefef !important
     &.primary
       color: #5f1c8b !important
-      &:hover
-        border: 1px solid #5f1c8b !important
+    &.danger
+      color: red !important
+    &.success
+      color: green !important
+    &.warning
+      color: orange !important
+    &.info
+      color: blue !important
 
 
   .primary
