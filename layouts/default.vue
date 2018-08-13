@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <nuxt/>
 </template>
 
 <style lang="sass">
@@ -9,6 +7,10 @@
 
   html
     font-family: 'Fira Sans', sans-serif;
+
+  html, body, #__nuxt, #__layout
+    width: 100%
+    height: 100%
 
   *, *:before, *:after
     box-sizing: border-box
