@@ -1,18 +1,31 @@
 <template>
   <section class="container full">
-    <btn primary>Primary</btn>
-    <btn info>Info</btn>
-    <btn success>Success</btn>
-    <btn warning>Warning</btn>
-    <btn danger>Danger</btn>
+    <h1>Buttons</h1>
+    <align horizontal>
+      <btn primary>Primary</btn>
+      <btn info>Info</btn>
+      <btn success>Success</btn>
+      <btn warning>Warning</btn>
+      <btn danger>Danger</btn>
+    </align>
+
+    <h1>Buttons (Flat)</h1>
+    <align horizontal>
+      <btn primary flat>Primary</btn>
+      <btn info flat>Info</btn>
+      <btn success flat>Success</btn>
+      <btn warning flat>Warning</btn>
+      <btn danger flat>Danger</btn>
+    </align>
+
     <br>
     <card>
       <card-title>Lorem Ipsum</card-title>
       <card-content>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </card-content>
       <card-actions>
-        <btn danger flat>Cancel</btn>
+        <btn flat>Cancel</btn>
         <btn primary flat>Ok</btn>
       </card-actions>
     </card>
@@ -33,6 +46,7 @@
 </style>
 
 <script>
+  import Align from '~/components/Align'
   import Btn from '~/components/Btn'
   import Card from '~/components/Card'
   import CardTitle from '~/components/CardTitle'
@@ -41,7 +55,7 @@
 
   export default {
     components: {
-      Btn, Card, CardTitle, CardContent, CardActions
+      Align, Btn, Card, CardTitle, CardContent, CardActions
     }
   }
 </script>

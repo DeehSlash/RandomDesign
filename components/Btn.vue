@@ -1,5 +1,5 @@
 <template>
-  <div class="btn" :class="{ primary: isPrimary, danger: isDanger, info: isInfo, warning: isWarning, success: isSuccess, flat: isFlat }">
+  <div class="btn" :class="{ primary: primary, danger: danger, info: info, warning: warning, success: success, flat: flat }">
     <slot/>
   </div>
 </template>
@@ -18,85 +18,65 @@
 
   .flat
     border: none !important
+    background-color: transparent !important
     &:hover
-      background-color: transparent !important
-      background-color: #efefef !important
+      background-color: #f3f3f3 !important
     &.primary
-      color: #5f1c8b !important
+      color: $primary !important
     &.danger
-      color: red !important
+      color: $danger !important
     &.success
-      color: green !important
+      color: $success !important
     &.warning
-      color: orange !important
+      color: $warning !important
     &.info
-      color: blue !important
-
+      color: $info !important
 
   .primary
-    color: #5f1c8b
-    border: 1px solid #5f1c8b
+    color: $primary
+    border: 1px solid $primary
     &:hover
-      background-color: #5f1c8b
+      background-color: $primary
       color: #fff
 
   .danger
-    color: red
-    border: 1px solid red
+    color: $danger
+    border: 1px solid $danger
     &:hover
-      background-color: red
+      background-color: $danger
       color: #fff
 
   .success
-    color: green
-    border: 1px solid green
+    color: $success
+    border: 1px solid $success
     &:hover
-      background-color: green
+      background-color: $success
       color: #fff
 
   .warning
-    color: orange
-    border: 1px solid orange
+    color: $warning
+    border: 1px solid $warning
     &:hover
-      background-color: orange
+      background-color: $warning
       color: #fff
 
   .info
-    color: blue
-    border: 1px solid blue
+    color: $info
+    border: 1px solid $info
     &:hover
-      background-color: blue
+      background-color: $info
       color: #fff
 </style>
 
 <script>
   export default {
-    props: ['primary', 'info', 'warning', 'danger', 'success', 'flat'],
-
-    computed: {
-      isPrimary () {
-        return this.primary !== undefined
-      },
-
-      isDanger () {
-        return this.danger !== undefined
-      },
-
-      isInfo () {
-        return this.info !== undefined
-      },
-
-      isWarning () {
-        return this.warning !== undefined
-      },
-
-      isSuccess () {
-        return this.success !== undefined
-      },
-
-      isFlat () {
-        return this.flat !== undefined
-      }
+    props: {
+      primary: Boolean,
+      info: Boolean,
+      warning: Boolean,
+      danger: Boolean,
+      success: Boolean,
+      flat: Boolean
     }
   }
 </script>

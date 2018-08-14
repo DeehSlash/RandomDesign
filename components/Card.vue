@@ -10,7 +10,7 @@
     width: 400px
     margin: 5px
     padding: 20px 15px
-    border: 1px solid #ccc
     border-radius: 5px
-    background-color: #fafafa
+    border: 1px solid #eee
+    box-shadow: 15px 15px 15px 0px #eee
 </style>
