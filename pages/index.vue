@@ -1,34 +1,34 @@
 <template>
   <section class="container full">
     <h1>Button</h1>
-    <align horizontal>
+    <flex row wrap justify-center>
       <btn primary>Primary</btn>
       <btn info>Info</btn>
       <btn success>Success</btn>
       <btn warning>Warning</btn>
       <btn danger>Danger</btn>
       <btn>Dark</btn>
-    </align>
+    </flex>
 
     <h1>Button (Filled)</h1>
-    <align horizontal>
+    <flex row wrap justify-center>
       <btn primary filled>Primary</btn>
       <btn info filled>Info</btn>
       <btn success filled>Success</btn>
       <btn warning filled>Warning</btn>
       <btn danger filled>Danger</btn>
       <btn filled>Dark</btn>
-    </align>
+    </flex>
 
     <h1>Button (Flat)</h1>
-    <align horizontal>
+    <flex row wrap justify-center>
       <btn primary flat>Primary</btn>
       <btn info flat>Info</btn>
       <btn success flat>Success</btn>
       <btn warning flat>Warning</btn>
       <btn danger flat>Danger</btn>
       <btn flat>Dark</btn>
-    </align>
+    </flex>
 
     <br>
     <card>
@@ -58,7 +58,7 @@
 </style>
 
 <script>
-  import Align from '~/components/Align'
+  import Flex from '~/components/Flex'
   import Btn from '~/components/Btn'
   import Card from '~/components/Card'
   import CardTitle from '~/components/CardTitle'
@@ -67,7 +67,7 @@
 
   export default {
     components: {
-      Align, Btn, Card, CardTitle, CardContent, CardActions
+      Flex, Btn, Card, CardTitle, CardContent, CardActions
     }
   }
 </script>
