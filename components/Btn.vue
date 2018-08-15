@@ -1,5 +1,5 @@
 <template>
-  <div class="btn" :class="{ primary: primary, danger: danger, info: info, warning: warning, success: success, flat: flat }">
+  <div class="btn" :class="{ primary: primary, danger: danger, info: info, warning: warning, success: success, flat: flat, filled: filled }">
     <slot/>
   </div>
 </template>
@@ -39,6 +39,34 @@
       color: $info !important
       &:hover
         border: 1px solid $info !important
+
+  .filled
+    color: #fff !important
+    &.primary
+      background-color: $primary !important
+      &:hover
+        background-color: lighten($primary, 10%) !important
+        border: 1px solid lighten($primary, 10%) !important
+    &.danger
+      background-color: $danger !important
+      &:hover
+        background-color: lighten($danger, 10%) !important
+        border: 1px solid lighten($danger, 10%) !important
+    &.success
+      background-color: $success !important
+      &:hover
+        background-color: lighten($success, 10%) !important
+        border: 1px solid lighten($success, 10%) !important
+    &.warning
+      background-color: $warning !important
+      &:hover
+        background-color: lighten($warning, 10%) !important
+        border: 1px solid lighten($warning, 10%) !important
+    &.info
+      background-color: $info !important
+      &:hover
+        background-color: lighten($info, 10%) !important
+        border: 1px solid lighten($info, 10%) !important
 
   .primary
     color: $primary
@@ -84,7 +112,8 @@
       warning: Boolean,
       danger: Boolean,
       success: Boolean,
-      flat: Boolean
+      flat: Boolean,
+      filled: Boolean
     }
   }
 </script>

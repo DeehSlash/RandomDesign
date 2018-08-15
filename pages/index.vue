@@ -1,6 +1,6 @@
 <template>
   <section class="container full">
-    <h1>Buttons</h1>
+    <h1>Button</h1>
     <align horizontal>
       <btn primary>Primary</btn>
       <btn info>Info</btn>
@@ -9,7 +9,16 @@
       <btn danger>Danger</btn>
     </align>
 
-    <h1>Buttons (Flat)</h1>
+    <h1>Button (Filled)</h1>
+    <align horizontal>
+      <btn primary filled>Primary</btn>
+      <btn info filled>Info</btn>
+      <btn success filled>Success</btn>
+      <btn warning filled>Warning</btn>
+      <btn danger filled>Danger</btn>
+    </align>
+
+    <h1>Button (Flat)</h1>
     <align horizontal>
       <btn primary flat>Primary</btn>
       <btn info flat>Info</btn>
