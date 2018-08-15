@@ -12,5 +12,5 @@
     padding: 20px 15px
     border-radius: 5px
     border: 1px solid #eee
-    box-shadow: 15px 15px 15px 0px #eee
+    box-shadow: 3px 3px 3px 0px #eee
 </style>
