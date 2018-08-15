@@ -17,20 +17,28 @@
       transition: all .15s ease
 
   .flat
-    border: none !important
+    border: 1px solid transparent !important
     background-color: transparent !important
-    &:hover
-      background-color: #f3f3f3 !important
     &.primary
       color: $primary !important
+      &:hover
+        border: 1px solid $primary !important
     &.danger
       color: $danger !important
+      &:hover
+        border: 1px solid $danger !important
     &.success
       color: $success !important
+      &:hover
+        border: 1px solid $success !important
     &.warning
       color: $warning !important
+      &:hover
+        border: 1px solid $warning !important
     &.info
       color: $info !important
+      &:hover
+        border: 1px solid $info !important
 
   .primary
     color: $primary
