@@ -12,20 +12,24 @@
     border-radius: 5px
     background-color: transparent
     color: $dark
+    box-shadow: 3px 3px 3px 0px #eee
     text-transform: uppercase
     user-select: none
     transition: all .5s ease
     &:hover
       background-color: $dark
       color: #fff
+      box-shadow: 3px 3px 3px 0px #ddd
       transition: all .15s ease
 
   .flat
     border: 1px solid transparent !important
     background-color: transparent !important
     color: $dark !important
+    box-shadow: none !important
     &:hover
       border: 1px solid $dark !important
+      box-shadow: 3px 3px 3px 0px #eee !important
     &.primary
       color: $primary !important
       &:hover
