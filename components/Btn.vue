@@ -15,6 +15,7 @@
     box-shadow: 3px 3px 3px 0px #eee
     text-transform: uppercase
     user-select: none
+    cursor: pointer
     transition: all .5s ease
     &:hover
       background-color: $dark
