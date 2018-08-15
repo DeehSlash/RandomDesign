@@ -1,5 +1,5 @@
 <template>
-  <div class="flex" :class="{ row: row, column: column, wrap: wrap, 'justify-center': 'justify-center', 'align-center': 'align-center' }">
+  <div class="flex" :class="{ row: row, column: column, wrap: wrap, 'justify-center': 'justify-center', 'align-center': 'align-center', 'text-center': 'text-center' }">
     <slot/>
   </div>
 </template>
@@ -19,10 +19,15 @@
     flex-wrap: wrap
 
   .justify-center
+    justify-items: center
     justify-content: center
 
   .align-center
+    align-items: center
     align-content: center
+
+  .text-center
+    text-align: center
 </style>
 
 <script>
@@ -32,7 +37,8 @@
       column: Boolean,
       wrap: Boolean,
       'justify-center': Boolean,
-      'align-center': Boolean
+      'align-center': Boolean,
+      'text-center': Boolean
     }
   }
 </script>
