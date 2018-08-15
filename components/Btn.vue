@@ -6,6 +6,7 @@
 
 <style lang="sass" scoped>
   .btn
+    height: 41px
     margin: 5px
     padding: 10px 25px
     border: 1px solid $dark
