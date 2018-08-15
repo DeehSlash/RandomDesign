@@ -8,17 +8,24 @@
   .btn
     margin: 5px
     padding: 10px 25px
+    border: 1px solid $dark
     border-radius: 5px
     background-color: transparent
+    color: $dark
     text-transform: uppercase
     user-select: none
     transition: all .5s ease
     &:hover
+      background-color: $dark
+      color: #fff
       transition: all .15s ease
 
   .flat
     border: 1px solid transparent !important
     background-color: transparent !important
+    color: $dark !important
+    &:hover
+      border: 1px solid $dark !important
     &.primary
       color: $primary !important
       &:hover
@@ -42,6 +49,10 @@
 
   .filled
     color: #fff !important
+    background-color: $dark !important
+    &:hover
+      background-color: lighten($dark, 10%) !important
+      border: 1px solid lighten($dark, 10%) !important
     &.primary
       background-color: $primary !important
       &:hover

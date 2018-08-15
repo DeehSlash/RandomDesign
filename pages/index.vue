@@ -7,6 +7,7 @@
       <btn success>Success</btn>
       <btn warning>Warning</btn>
       <btn danger>Danger</btn>
+      <btn>Dark</btn>
     </align>
 
     <h1>Button (Filled)</h1>
@@ -16,6 +17,7 @@
       <btn success filled>Success</btn>
       <btn warning filled>Warning</btn>
       <btn danger filled>Danger</btn>
+      <btn filled>Dark</btn>
     </align>
 
     <h1>Button (Flat)</h1>
@@ -25,6 +27,7 @@
       <btn success flat>Success</btn>
       <btn warning flat>Warning</btn>
       <btn danger flat>Danger</btn>
+      <btn flat>Dark</btn>
     </align>
 
     <br>
